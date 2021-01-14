@@ -5,7 +5,7 @@ let etapas = [
         numeros: 5,
         candidatos: [
             {
-                numero: 77111,
+                numero: '77111',
                 nome: 'Optimus Prime',
                 partido: 'PA',
                 fotos: [
@@ -13,7 +13,7 @@ let etapas = [
                 ]
             },
             {
-                numero: 84001,
+                numero: '84001',
                 nome: 'Mestre Yoda',
                 partido: 'PRE',
                 fotos: [
@@ -21,7 +21,7 @@ let etapas = [
                 ]
             },
             {
-                numero: 88001,
+                numero: '88001',
                 nome: 'Neil Matriz',
                 partido: 'PJM',
                 fotos: [
@@ -29,7 +29,7 @@ let etapas = [
                 ]
             },
             {
-                numero: 90111,
+                numero: '90111',
                 nome: 'Hellboy',
                 partido: 'PMI',
                 fotos: [
@@ -37,7 +37,7 @@ let etapas = [
                 ]
             },
             {
-                numero: 95001,
+                numero: '95001',
                 nome: 'Juiz Dredd',
                 partido: 'PLJ',
                 fotos: [
@@ -45,7 +45,7 @@ let etapas = [
                 ]
             },
             {
-                numero: 99001,
+                numero: '99001',
                 nome: 'Dart Maul',
                 partido: 'PVL',
                 fotos: [
@@ -59,7 +59,7 @@ let etapas = [
         numeros: 2,
         candidatos: [
             {
-                numero: 84,
+                numero: '84',
                 nome: 'Leia Skywalker',
                 partido: 'PRE',
                 vice: 'Mulher Maravilha',
@@ -69,7 +69,7 @@ let etapas = [
                 ]
             },
             {
-                numero: 88,
+                numero: '88',
                 nome: 'Batman',
                 partido: 'PJM',
                 vice: 'Robin',
@@ -79,7 +79,7 @@ let etapas = [
                 ]
             },
             {
-                numero: 95,
+                numero: '95',
                 nome: 'Capitão America',
                 partido: 'PPLJ',
                 vice: 'Homem de Ferro',
@@ -89,7 +89,7 @@ let etapas = [
                 ]
             },
             {
-                numero: 99,
+                numero: '99',
                 nome: 'Coringa',
                 partido: 'PVL',
                 vice: 'Dart Vader',
