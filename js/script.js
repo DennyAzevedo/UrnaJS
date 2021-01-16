@@ -10,12 +10,15 @@ let numeros = document.querySelector('.d-1-3');
 let etapaAtual = 0;
 let numero = '';
 let votoBranco = false;
+let votoNulo = false;
+let votos = [];
 
 function comecarEtapa() {
     let etapa = etapas[etapaAtual];
     let numeroHtml = '';
     numero = '';
     votoBranco = false;
+    votoNulo = false;
 
     for(let cont=0; cont < etapa.numeros; cont++) {
         if(cont === 0) {
@@ -63,6 +66,7 @@ function atualizaInterface() {
         seuVotoPara.style.display = 'block';
         aviso.style.display = 'block';
         descricao.innerHTML = '<div class="aviso--grande pisca">VOTO NULO</div>';
+        votoNulo = true;
     }
 }
 
@@ -113,17 +117,31 @@ function confirma() {
     let votoConfirmado = false;
     if(votoBranco) {
         votoConfirmado = true;
-        console.log("Confirmado como BRANCO...");
+        votos.push({
+            etapa: etapas[etapaAtual].titulo,
+            voto: 'branco'
+        });
     } else if(numero.length === etapa.numeros) {
         votoConfirmado = true;
-        console.log("Confirmado como "+numero);
+        if(votoNulo) {
+            votos.push({
+                etapa: etapas[etapaAtual].titulo,
+                voto: 'nulo'
+            });
+        } else {
+            votos.push({
+                etapa: etapas[etapaAtual].titulo,
+                voto: numero
+            });
+        }
     }
     if(votoConfirmado) {
         etapaAtual++;
         if(etapas[etapaAtual] !== undefined) {
             comecarEtapa();
         } else {
-            console.log("FIM!");
+            document.querySelector('.tela').innerHTML = '<div class="aviso--gigante pisca">FIM</div>';
+            console.log(votos);
         }
     }
 }
