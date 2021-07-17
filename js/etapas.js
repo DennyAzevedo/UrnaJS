@@ -1,3 +1,13 @@
+/*
+=========================================================================
+Nome do Projeto: Simulador da Urna Eletrônica
+Finalidade: Cursos de Informática do IFSP campus Caraguatatuba
+Fonte Base: Projetos do Curso B7Web - https://b7web.com.br/
+Autores: Marilene Esquiavoni & Denny Paulista Azevedo Filho
+License: MIT License
+=========================================================================
+*/
+
 //Dados no formato JSON
 let etapas = [
     {
